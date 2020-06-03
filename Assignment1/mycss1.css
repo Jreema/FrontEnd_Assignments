@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap');
+
+.container{
+    margin:0 auto;
+    max-width:1200px;
+    font-family: 'Playfair Display', serif;
+}
+
+.header{
+    width:100%;
+    max-width:1200px;
+    position:fixed;
+    top:0;
+    background-color:white;
+         
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    margin: 0.75em 1em 0.5em 1em;
+}
+nav a{
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: black;
+}
+.hamburger div{
+   width: 15px;
+   height: 3px;
+   background-color: black;
+   margin: 6px 0;
+}
+.subcontainer{
+    margin: 3.5rem auto;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+
+}
+.items{
+    margin:0 auto;
+    width:100%;
+    text-align:center;
+    justify-content:center;
+    
+}
+.items img{
+    width:100%;
+    
+}
+.items h3, .items p{
+    text-align:center;
+    padding: 0 0.5em;
+}
+.page-nav{
+    display:flex;
+    padding: 10px;
+    margin:0 auto;
+    justify-content:center;
+    align-items:center;
+    
+}
+.page-nav a{
+    margin:20px 0;
+    padding: 15px;
+    color:black;
+    text-decoration:none;
+}
+.page-nav a:hover{
+    background-color: black;
+    color:white;
+}
+.page-nav a:active{
+    background-color: black;
+    color: white;
+}
+.about-chef{
+    margin: 0 auto;
+    text-align:center;
+    display: inline-block;
+}
+.about-chef h2{
+    margin:25px 0;
+}
+.about-chef img{
+    display:block;
+    margin-left:auto;
+    margin-right: auto;
+    width: 70%;
+}
+.about-chef h3{
+    margin:25px 0;
+}
+.about-chef p{
+    padding: 0 0.5em;
+}
+.bottom{
+    display: flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.footer, .blog, .tags{
+    width: 100%;
+    text-align:center;
+    margin: 0.5rem;
+}
+.footer-head{
+    font-size:1.25rem;
+}
+.div1{
+    display: flex;
+    justify-content:space-evenly;
+}
+.div1:hover{
+    background-color:rgb(223, 221, 221);
+}
+.blog img{
+    width:20%;
+    align-self:center;
+}
+.blog-div{
+    display: block;
+    margin:0 ;
+}
+.blog-div p{
+    margin:0;
+}
+.tags a{
+    background-color: rgb(129, 127, 127);
+    color:white;
+    padding:0.25rem 0.25rem;
+    text-decoration: none;
+    margin: 0.25rem 0.25rem;
+    display: inline-block;
+}
+@media (min-width:600px){
+    .container{
+        font-size:1.25rem;
+    }
+    nav ul{
+        flex-direction:row;
+    }
+    nav a{
+        font-size:1.5rem;
+    }
+    .hamburger div{
+        width: 20px;
+        height: 3px;
+        background-color: black;
+        margin: 6px 0;
+    }
+    .subcontainer{
+        flex-direction: row;
+        flex-wrap:wrap;
+    }
+    .items{
+        width:46%;
+    }
+    .bottom{
+        flex-direction: row;
+        
+    }
+
+    .footer, .blog, .tags{
+    width: 30%;
+    }
+    .footer-head{
+        font-size:1.5rem;
+    }
+    .blog img{
+        width:22%;
+       align-self:center;
+    }
+
+}
+@media (min-width:900px){
+    .contianer{
+        font-size:1.5rem;
+    }
+    nav ul{
+        flex-direction:row;
+    }
+    nav a{
+        font-size:1.75rem;
+    }
+    .hamburger div{
+        width: 30px;
+        height: 3px;
+        background-color: black;
+        margin: 6px 0;
+    }
+    .subcontainer{
+        flex-direction: row;
+        flex-wrap:wrap;
+    }
+    .items{
+        width:23%;
+    }
+    .bottom{
+        flex-direction: row;
+       
+    }
+
+    .footer, .blog, .tags{
+    width: 30%;
+    }
+    .footer-head{
+        font-size:1.5rem;
+    }
+
+    .blog img{
+        width:25%;
+        align-self:center;
+    }
+
+}
+
